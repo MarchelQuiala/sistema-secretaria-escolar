@@ -97,7 +97,7 @@ AA --> AC[Gerir Login]
 AA --> AD[Controlar Permissões]
 AA --> AE[Gerir Sistema]
 ```
-
+---
 ```mermaid
 flowchart TD
 
