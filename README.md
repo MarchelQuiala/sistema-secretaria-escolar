@@ -1,4 +1,9 @@
 # sistema-secretaria-escolar
+1. Descrição do Sistema
+
+O Sistema de Secretaria Escolar é uma aplicação desenvolvida para informatizar e organizar os processos administrativos e académicos de uma instituição de ensino.
+
+O sistema permite gerir estudantes, professores, turmas, disciplinas, notas, pagamentos e documentos académicos, reduzindo o uso de processos manuais e melhorando a eficiência da secretaria.
 
 ```mermaid
 graph TD
