@@ -47,7 +47,22 @@ O sistema permite gerir estudantes, professores, turmas, disciplinas, notas, pag
 - Gestão de documentos  
 - Gestão de utilizadores/login  
 - Geração de relatórios  
+---
 
+---
+
+## 🧩 5. Diagrama de Caso de Uso
+
+Este diagrama representa as funcionalidades do sistema e a forma como cada utilizador (actor) interage com ele.
+
+Cada ligação indica uma acção que o utilizador pode executar dentro do sistema de secretaria escolar.
+
+### 👉 Em resumo:
+- Mostra quem faz o quê no sistema  
+- Representa os requisitos funcionais  
+- Ajuda a entender o sistema do ponto de vista do utilizador  
+
+---
 ```mermaid
 graph TD
 
