@@ -146,7 +146,21 @@ Q --> R[Fim]
 ```
 
 ---
+## 📡 7. Diagrama de Sequência
 
+Este diagrama mostra como os diferentes componentes do sistema comunicam entre si durante a execução de uma tarefa.
+
+Neste caso, a emissão de matrícula e comprovativo.
+
+### 👉 Em resumo:
+- Mostra a ordem das mensagens  
+- Mostra quem fala com quem  
+- Mostra o fluxo temporal do sistema  
+
+### 📌 Interpretação:
+A secretária interage com o sistema, que por sua vez comunica com a base de dados, tesouraria e impressora.
+
+---
 ```mermaid
 sequenceDiagram
 
@@ -187,7 +201,19 @@ Impressora-->>Secretaria: Documento Impresso
 
 Secretaria-->>Estudante: Entregar Comprovativo
 ```
+---
+## 🏗️ 8. Diagrama de Classes
 
+Este diagrama representa a estrutura do sistema em termos de objectos (classes), atributos e relações.
+
+### 👉 Em resumo:
+- Mostra como o sistema é construído internamente  
+- Define entidades do sistema  
+- Representa a base da programação (POO)  
+
+### 📌 Interpretação:
+Cada classe representa uma entidade real do sistema escolar.
+---
 
 ```mermaid
 classDiagram
