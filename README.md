@@ -1,7 +1,6 @@
 # sistema-secretaria-escolar
 
 
----
 
 ## 📌 Descrição do Sistema
 
