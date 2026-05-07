@@ -97,6 +97,19 @@ AA --> AD[Controlar Permissões]
 AA --> AE[Gerir Sistema]
 ```
 ---
+## 🔄 6. Diagrama de Actividade
+
+Este diagrama mostra o fluxo de execução de um processo dentro do sistema, neste caso o processo de matrícula de um estudante.
+
+### 👉 Em resumo:
+- Mostra passo a passo de um processo  
+- Inclui decisões (Sim / Não)  
+- Representa o comportamento do sistema  
+
+### 📌 Interpretação:
+O processo começa com a recepção dos documentos e termina quando a matrícula é concluída.
+
+---
 ```mermaid
 flowchart TD
 
@@ -133,7 +146,7 @@ P --> Q[Concluir Matrícula]
 Q --> R[Fim]
 ```
 
-
+---
 
 ```mermaid
 sequenceDiagram
