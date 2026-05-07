@@ -214,7 +214,6 @@ Este diagrama representa a estrutura do sistema em termos de objectos (classes),
 ### 📌 Interpretação:
 Cada classe representa uma entidade real do sistema escolar.
 ---
-
 ```mermaid
 classDiagram
 
@@ -232,8 +231,8 @@ class Professor{
   +id
   +nome
   +disciplina
-  +lancarNotas()
-  +registrarPresenca()
+  +lançarNotas()
+  +registarPresenca()
 }
 
 class Secretaria{
@@ -328,7 +327,7 @@ class Relatorio{
   +gerar()
 }
 
-Secretaria --> Estudante : registra
+Secretaria --> Estudante : regista
 Estudante --> Matricula : possui
 Estudante --> Pagamento : realiza
 Professor --> Nota : lança
@@ -343,4 +342,3 @@ Documento --> Declaracao
 Documento --> Certificado
 Turma --> Estudante : contém
 Disciplina --> Turma : pertence
-```
