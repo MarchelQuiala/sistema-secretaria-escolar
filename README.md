@@ -327,19 +327,19 @@ class Relatorio{
   +gerar()
 }
 
-Secretaria --> Estudante : registrar
-Estudante --> Matricula : possui
-Estudante --> Pagamento : realiza
-Professor --> Nota : lança
-Professor --> Presenca : controla
-Turma --> Horario : possui
-Disciplina --> Professor : atribuída
-Tesouraria --> Pagamento : confirma
-Administrador --> Usuario : gere
-Administrador --> Login : controla
-Director --> Relatorio : gera
-Documento --> Declaracao
-Documento --> Certificado
-Turma --> Estudante : contém
-Disciplina --> Turma : pertence
+Secretaria --> Estudante : registar
+Estudante --> Matricula : possuir
+Estudante --> Pagamento : realizar
+Professor --> Nota : lançar
+Professor --> Presenca : controlar
+Turma --> Horario : possuir
+Disciplina --> Professor : atribuir
+Tesouraria --> Pagamento : confirmar
+Administrador --> Usuario : gerir
+Administrador --> Login : controlar
+Director --> Relatorio : gerar
+Documento --> Declaracao : emitir
+Documento --> Certificado : emitir
+Turma --> Estudante : conter
+Disciplina --> Turma : pertencer
 ```
