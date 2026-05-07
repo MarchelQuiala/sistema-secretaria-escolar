@@ -49,7 +49,6 @@ O sistema permite gerir estudantes, professores, turmas, disciplinas, notas, pag
 - Geração de relatórios  
 ---
 
----
 
 ## 🧩 5. Diagrama de Caso de Uso
 
