@@ -231,8 +231,8 @@ class Professor{
   +id
   +nome
   +disciplina
-  +lançarNotas()
-  +registarPresenca()
+  +lancarNotas()
+  +registrarPresenca()
 }
 
 class Secretaria{
@@ -327,7 +327,7 @@ class Relatorio{
   +gerar()
 }
 
-Secretaria --> Estudante : regista
+Secretaria --> Estudante : registrar
 Estudante --> Matricula : possui
 Estudante --> Pagamento : realiza
 Professor --> Nota : lança
@@ -342,3 +342,4 @@ Documento --> Declaracao
 Documento --> Certificado
 Turma --> Estudante : contém
 Disciplina --> Turma : pertence
+```
