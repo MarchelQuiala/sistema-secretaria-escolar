@@ -327,7 +327,7 @@ class Relatorio{
   +gerar()
 }
 
-Secretaria --> Estudante : registar
+Secretaria --> Estudante : registrar
 Estudante --> Matricula : possuir
 Estudante --> Pagamento : realizar
 Professor --> Nota : lançar
