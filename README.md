@@ -4,6 +4,33 @@
 O Sistema de Secretaria Escolar é uma aplicação desenvolvida para informatizar e organizar os processos administrativos e académicos de uma instituição de ensino.
 
 O sistema permite gerir estudantes, professores, turmas, disciplinas, notas, pagamentos e documentos académicos, reduzindo o uso de processos manuais e melhorando a eficiência da secretaria.
+2. Objectivos do Sistema
+Automatizar processos administrativos escolares
+Melhorar o controlo de estudantes e professores
+Facilitar a emissão de documentos oficiais
+Organizar pagamentos e propinas
+Centralizar informações académicas
+Melhorar a comunicação entre sectores da escola
+3. Actores do Sistema
+Secretária
+Estudante
+Professor
+Director
+Tesouraria
+Administrador
+4. Funcionalidades do Sistema
+Matrícula de estudantes
+Gestão de propinas
+Emissão de declarações
+Emissão de certificados
+Gestão de notas
+Gestão de turmas
+Gestão de disciplinas
+Gestão de horários
+Controle de presença
+Gestão de documentos
+Gestão de utilizadores/login
+Geração de relatórios
 
 ```mermaid
 graph TD
