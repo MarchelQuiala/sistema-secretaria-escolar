@@ -169,34 +169,40 @@ participant Secretaria
 participant Sistema
 participant BaseDeDados
 participant Tesouraria
+participant TPA
+participant Banco
 participant Impressora
 
+%% 1. Registo do estudante
 Estudante->>Secretaria: Solicita Matrícula
-
 Secretaria->>Sistema: Inserir Dados
-
 Sistema->>BaseDeDados: Guardar Estudante
-
 BaseDeDados-->>Sistema: Confirmação
+Sistema-->>Secretaria: Estudante Registrado (ID gerado)
 
-Sistema-->>Secretaria: Estudante Registrado
+%% 2. Pagamento via TPA
+Estudante->>Tesouraria: Solicita Pagamento
+Tesouraria->>Sistema: Abrir Registo do Estudante
+Sistema-->>Tesouraria: Dados do Estudante
 
-Secretaria->>Tesouraria: Solicitar Confirmação de Pagamento
+Tesouraria->>TPA: Iniciar Pagamento
+Estudante->>TPA: Inserir cartão / pagar
+TPA->>Banco: Autorizar pagamento
+Banco-->>TPA: Pagamento aprovado
 
-Tesouraria->>Sistema: Confirmar Propina
-
+TPA->>Sistema: Confirmar pagamento
 Sistema->>BaseDeDados: Actualizar Pagamento
-
 BaseDeDados-->>Sistema: Pagamento Confirmado
 
-Sistema-->>Tesouraria: Confirmação
+Sistema-->>Tesouraria: Pagamento OK
 
-Tesouraria-->>Secretaria: Pagamento Validado
+%% 3. Finalização da matrícula
+Tesouraria-->>Secretaria: Pagamento confirmado (automático via sistema)
 
-Secretaria->>Sistema: Gerar Matrícula
+Secretaria->>Sistema: Finalizar Matrícula
+Sistema->>BaseDeDados: Activar Matrícula
 
-Sistema->>Impressora: Imprimir Comprovativo
-
+Sistema->>Impressora: Emitir Comprovativo
 Impressora-->>Secretaria: Documento Impresso
 
 Secretaria-->>Estudante: Entregar Comprovativo
